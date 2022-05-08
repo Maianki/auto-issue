@@ -52,34 +52,46 @@ const handleCreateIssue = async() => {
 
       {/* title input */}
       <Text mb='8px'>Title</Text>
-      <Input mb='15px' className="input-title" variant='filled' placeholder='Title' size='lg' value={apiInput.title} onChange={e => setApiInput({...apiInput, title: e.target.value})}/>
+      <Input
+        mb='15px'
+        className='input'
+        variant='filled'
+        placeholder='Title'
+        size='lg'
+        value={apiInput.title}
+        onChange={(e) => setApiInput({ ...apiInput, title: e.target.value })}
+      />
       {/* description input */}
       <Text mb='8px'>Description</Text>
       <Textarea
         mb='15px'
-        className="input-title"
+        className='input'
         variant='filled'
         placeholder='Enter description'
         size='sm'
         value={apiInput.description}
-        onChange={e => setApiInput({...apiInput, description: e.target.value})}
+        onChange={(e) =>
+          setApiInput({ ...apiInput, description: e.target.value })
+        }
       />
       {/* repository URL input */}
       <Text mb='8px'>Repository URL</Text>
       <Input
         mb='15px'
-        className="input-title"
+        className='input'
         variant='filled'
         placeholder='https://github.com/xyz/abc'
         size='lg'
         value={apiInput.url}
-        onChange={e => setApiInput({...apiInput, url: e.target.value})}
+        onChange={(e) => setApiInput({ ...apiInput, url: e.target.value })}
       />
       <div className='flex-r button-group'>
         <Link to='/' className='btn btn-primary text-md btn-back'>
           Go Back
         </Link>
-        <button className='btn btn-primary text-md' onClick={handleCreateIssue}>Create Issue</button>
+        <button className='btn btn-primary text-md' onClick={handleCreateIssue}>
+          Create Issue
+        </button>
       </div>
     </div>
   );
