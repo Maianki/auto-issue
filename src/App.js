@@ -1,6 +1,5 @@
 import "./App.css";
 import { Homepage, CreateIssuePage } from "./pages";
-import { ModalContainer } from "./Modal";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
