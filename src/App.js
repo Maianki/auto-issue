@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import capture from "./assets/capture.png"
+import welcomeImg from "./assets/welcome-img.svg";
 import bugFixing from "./assets/bug-fixing.gif";
 import { ModalContainer } from "./modal";
 
@@ -14,6 +14,7 @@ function App() {
         </h3>
         <div className='issue-title text-xlg'>Spelling Mistake</div>
         <img className='issue-img' src={bugFixing} alt='issue-img' />
+        <img className='issue-img' src={welcomeImg} alt='issue-img' />
         <div className='issue-desc text-lg'>
           Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
           consectetur, adipisci velit..
