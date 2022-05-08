@@ -3,10 +3,8 @@ import { Heading, Input, Text, Container, Textarea } from "@chakra-ui/react";
 
 export function CreateIssuePage() {
   return (
-    <div className='popup-container'>
-      <Heading as='h2' size='xl' p={8}>
-        Add Issue
-      </Heading>
+    <Container>
+      <h1 className='extension-name text-bold-weight text-center'>Add issue</h1>
 
       {/* title input */}
       <Text mb='8px'>Title</Text>
@@ -27,6 +25,6 @@ export function CreateIssuePage() {
         placeholder='https://github.com/xyz/abc'
       />
       <button className='btn btn-primary text-md'>Create Issue</button>
-    </div>
+    </Container>
   );
 }
