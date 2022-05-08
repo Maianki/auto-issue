@@ -1,5 +1,5 @@
 import React from "react";
 
 export function CreateIssuePage() {
-  return <div>CreateIssuePage</div>;
+  return <div className='popup-container'></div>;
 }

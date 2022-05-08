@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import welcomeImg from "../../assets/welcome-img.svg";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 export function Homepage() {
@@ -14,12 +14,15 @@ export function Homepage() {
         want to report a bug?
       </h3>
       <img className='issue-img' src={welcomeImg} alt='issue-img' />
-      <div className='issue-desc text-md'>
+      <div className='issue-desc text-md text-center'>
         An easy to use chrome extension to create issue in the github repo of
         visiting webpage
       </div>
       <div className='issue-footer flex-r'>
-        <button className='btn btn-primary text-md'>Raise Issue</button>
+        <Link to='/create-issue'>
+          <button className='btn btn-primary text-md'>Raise Issue</button>
+        </Link>
+
         {/* <button className='m-left-auto btn-icon1 btn footer-icon'>
           <i className='fa-solid fa-ellipsis-vertical'></i>
         </button> */}
