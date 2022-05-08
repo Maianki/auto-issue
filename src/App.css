@@ -40,33 +40,9 @@
   background-color: #019ba3;
   color: #EEEEEE;
 }
-.dropdown-section {
-  position: absolute;
-  top: 38rem;
-  right: 8rem;
-  white-space: nowrap;
-  z-index: 3;
-  background-color: #393E46;
-  font-size: 1.6rem;
-  padding: 0.6rem;
-  border-radius: 1rem;
-}
-.dropdown-item {
-  padding: 0.4rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-.dropdown-item:hover{
-  cursor: pointer;
-  background-color: #222831;
-}
 
 .create-issue-heading {
   font-size: 2.6rem;
-}
-
-.create-issue-heading {
   padding-bottom: 8px;
 }
 
@@ -82,4 +58,8 @@
 
 .btn-back:hover {
   opacity: 1;
+}
+.container-create-issue {
+  min-width: 350px;
+  padding: 5rem;
 }
