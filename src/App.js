@@ -1,5 +1,5 @@
 import "./App.css";
-import { Homepage } from "./pages";
+import { Homepage, CreateIssuePage } from "./pages";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div>
       <Routes>
         <Route path='/' element={<Homepage />}></Route>
-        <Route path='/createe-issue' element={<>Create Issue</>}></Route>
+        <Route path='/create-issue' element={<CreateIssuePage />}></Route>
       </Routes>
     </div>
   );
