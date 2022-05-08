@@ -1,5 +1,5 @@
 import "./App.css";
-import { Homepage, CreateIssuePage } from "./pages";
+import { Homepage, CreateIssuePage, Callback } from "./pages";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />}></Route>
         <Route path='/create-issue' element={<CreateIssuePage />}></Route>
+        <Route path='/callback' element={<Callback />} exact></Route>
       </Routes>
     </div>
   );
