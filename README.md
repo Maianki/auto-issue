@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Auto Create Issue
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### A auto create issue extension for Github
 
-## Available Scripts
+## 📖 About
 
-In the project directory, you can run:
+#### The auto create issue extension gives you the power of creating issues on a GitHub repository directly while going through the website. You can suggest any UI changes and create an issue with one click without having great knowledge of using Github.
+---
+## 🚀 Features :
 
-### `npm start`
+- Chrome extension to create issue in the github repo of visiting webpage.
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎥 Demo
+![Untitled design(2)](https://user-images.githubusercontent.com/28630412/167315626-86457f9d-438b-4c79-a534-5a078d6d89b0.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📸 Snaps
+![snap-1 (1)](https://user-images.githubusercontent.com/28630412/167314953-20e7014a-2a4e-4baf-b647-c1318257ea49.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![snap-2](https://user-images.githubusercontent.com/28630412/167315003-4ed3a893-15c9-45a1-8652-72660921fda2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![snap-3](https://user-images.githubusercontent.com/28630412/167315120-954307b8-9863-4aa3-8bd8-0c950600cefb.JPG)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔌Setting Up the Extension
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  ```
+  git clone https://github.com/Maianki/auto-issue
+  ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+2. Go to the project directory
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+  cd auto-issue
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Install dependencies
+```
+  npm install
+```
 
-### Code Splitting
+4. run
+```
+  npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. Go to Chrome Settings and then extensions or type chrome://extensions/ on the search bar.
+6. Make sure Developer mode is turned on.
+7. Click on the Load Unpacked Extension button.
+8. Navigate to the directory where you cloned the repository and select build folder and open it.
+9. DONE! The extension is ready to use.
+We need to attach a screenshot and video to it, After the extension is finalised.
+and if you wish to change something feel free to do it.
