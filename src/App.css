@@ -1,6 +1,13 @@
+.site-logo {
+  width: 3.6rem;
+  padding-right: 5px;
+}
 .extension-name {
   padding-bottom: 3rem;
   font-size: 2.6rem;
+  color: #EEEEEE;
+    display: flex;
+    align-items: center;
 }
 .popup-container{
   position: relative;
@@ -10,7 +17,7 @@
   padding-bottom: 1rem;
 }
 .issue-img {
-  width: 30rem;
+  width: 34rem;
 }
 .issue-desc {
   padding-top: 1rem;
@@ -20,6 +27,7 @@
   -webkit-line-clamp: 2;
 }
 .issue-footer {
+  justify-content: center;
   padding: 2rem 0 2rem 0;
   border-bottom: 1px solid #EEEEEE;
 }
