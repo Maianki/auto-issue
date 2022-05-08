@@ -6,13 +6,15 @@ export function Homepage() {
   //   const [dropdown, setDropdown] = useState(false);
   return (
     <div className='popup-container'>
-      <h2 className='extension-name text-bold-weight text-center'>
+      <h1 className='extension-name text-bold-weight text-center'>
         <img className='site-logo' src={logo} alt='site logo' />
         <span>Create Auto Issues</span>
-      </h2>
-      <h3 className='issue-title text-xlg text-center'>want to report bug?</h3>
+      </h1>
+      <h3 className='issue-title text-xlg text-center'>
+        want to report a bug?
+      </h3>
       <img className='issue-img' src={welcomeImg} alt='issue-img' />
-      <div className='issue-desc text-sm'>
+      <div className='issue-desc text-md'>
         An easy to use chrome extension to create issue in the github repo of
         visiting webpage
       </div>

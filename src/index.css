@@ -5,7 +5,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 380px;
+  width: 350px;
   display: flex;
   justify-content: center;
   background-color: #222831 !important; 
