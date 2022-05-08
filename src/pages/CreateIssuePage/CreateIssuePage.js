@@ -25,12 +25,12 @@ export function CreateIssuePage() {
         variant='filled'
         placeholder='https://github.com/xyz/abc'
       />
-      <div className='flex-r button-group'>
-        <Link to='/' className='btn btn-primary text-md btn-back'>
-          Go Back
-        </Link>
-        <button className='btn btn-primary text-md'>Create Issue</button>
-      </div>
+      {/* <div className='flex-r button-group'> */}
+      <Link to='/' className='btn btn-primary text-md btn-back'>
+        Go Back
+      </Link>
+      {/* <button className='btn btn-primary text-md'>Create Issue</button> */}
+      {/* </div> */}
     </div>
   );
 }
