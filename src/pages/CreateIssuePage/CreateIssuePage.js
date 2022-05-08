@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, Text, Textarea } from "@chakra-ui/react";
+import { Input, Text, Textarea, useToast } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
@@ -12,40 +12,58 @@ export function CreateIssuePage() {
     title: "",
     description: "",
     url: "",
-  })
-  const [urlArray, setURLArray] = useState([])
+  });
+  const [urlArray, setURLArray] = useState([]);
+  const toast = useToast();
 
   const getURL = (url) => {
     const inputURLArray = url.split("/");
-    setURLArray(inputURLArray)
-    return `${inputURLArray[0]}//api.${inputURLArray[2]}/repos/${inputURLArray[3]}/${inputURLArray[4]}/issues`
-  }
+    setURLArray(inputURLArray);
+    return `${inputURLArray[0]}//api.${inputURLArray[2]}/repos/${inputURLArray[3]}/${inputURLArray[4]}/issues`;
+  };
 
-const encodedToken = process.env.REACT_APP_API_KEY;
+  const encodedToken = process.env.REACT_APP_API_KEY;
 
-const handleCreateIssue = async() => {
+  const handleCreateIssue = async () => {
     try {
       const response = await axios.post(
-          getURL(apiInput.url),
-          {
-            owner: `${urlArray[3]}`,
-            repo: `${urlArray[4]}`,
-            title: `${apiInput.title}`,
-            body: `${apiInput.description}`,
+        getURL(apiInput.url),
+        {
+          owner: `${urlArray[3]}`,
+          repo: `${urlArray[4]}`,
+          title: `${apiInput.title}`,
+          body: `${apiInput.description}`,
+        },
+        {
+          headers: {
+            Authorization: `Token ${encodedToken}`,
           },
-          {headers:{
-            "Authorization": `Token ${encodedToken}`
-          }}
-
-      )
-      if (response.status===201){
-        console.log("Success")
+        }
+      );
+      if (response.status === 201) {
+        toast({
+          title: `Issue created successfully`,
+          status: "success",
+          isClosable: true,
+          duration: 2000,
+        });
+        setApiInput({
+          owner: "",
+          repo: "",
+          title: "",
+          description: "",
+          url: "",
+        });
       }
-  } catch (error) {
-      console.log(`Something went wrong ${error}`)
-  }
-  }
-
+    } catch (error) {
+      toast({
+        title: `Something went wrong ${error}`,
+        status: "success",
+        isClosable: true,
+        duration: 2000,
+      });
+    }
+  };
 
   return (
     <div className='container-create-issue'>
@@ -61,6 +79,7 @@ const handleCreateIssue = async() => {
         size='lg'
         value={apiInput.title}
         onChange={(e) => setApiInput({ ...apiInput, title: e.target.value })}
+        isRequired
       />
       {/* description input */}
       <Text mb='8px'>Description</Text>
@@ -85,6 +104,7 @@ const handleCreateIssue = async() => {
         size='lg'
         value={apiInput.url}
         onChange={(e) => setApiInput({ ...apiInput, url: e.target.value })}
+        isRequired
       />
       <div className='flex-r button-group'>
         <Link to='/' className='btn btn-primary text-md btn-back'>
