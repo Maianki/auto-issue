@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 export function Homepage() {
-  //   const [dropdown, setDropdown] = useState(false);
   return (
     <div className='popup-container'>
       <h1 className='extension-name text-bold-weight text-center'>
@@ -22,29 +21,7 @@ export function Homepage() {
         <Link to='/create-issue'>
           <button className='btn btn-primary text-md'>Raise Issue</button>
         </Link>
-
-        {/* <button className='m-left-auto btn-icon1 btn footer-icon'>
-          <i className='fa-solid fa-ellipsis-vertical'></i>
-        </button> */}
       </div>
-
-      {/* {dropdown && (
-        <div
-          onClick={() => {
-            setDropdown((prev) => !prev);
-          }}
-          className='list-non-bullet dropdown-section'
-        >
-          <li className='dropdown-item'>
-            <i className='fa-solid fa-pen'></i>
-            <span>Edit</span>
-          </li>
-          <li className='dropdown-item'>
-            <i className='fa-solid fa-trash-can'></i>
-            <span>Delete</span>
-          </li>
-        </div>
-      )} */}
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import React from "react";
-import { Heading, Input, Text, Container, Textarea } from "@chakra-ui/react";
+import { Input, Text, Textarea } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 export function CreateIssuePage() {
   return (
-    <Container>
-      <h1 className='extension-name text-bold-weight text-center'>Add issue</h1>
+    <div className='issue-page-container'>
+      <h1 className='create-issue-heading text-bold-weight'>Add issue</h1>
 
       {/* title input */}
       <Text mb='8px'>Title</Text>
@@ -24,7 +25,12 @@ export function CreateIssuePage() {
         variant='filled'
         placeholder='https://github.com/xyz/abc'
       />
-      <button className='btn btn-primary text-md'>Create Issue</button>
-    </Container>
+      <div className='flex-r button-group'>
+        <Link to='/' className='btn btn-primary text-md btn-back'>
+          Go Back
+        </Link>
+        <button className='btn btn-primary text-md'>Create Issue</button>
+      </div>
+    </div>
   );
 }
