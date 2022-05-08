@@ -21,9 +21,6 @@
 ![snap-1 (1)](https://user-images.githubusercontent.com/28630412/167314953-20e7014a-2a4e-4baf-b647-c1318257ea49.png)
 
 
-![snap-2](https://user-images.githubusercontent.com/28630412/167315003-4ed3a893-15c9-45a1-8652-72660921fda2.png)
-
-
 ![snap-3](https://user-images.githubusercontent.com/28630412/167315120-954307b8-9863-4aa3-8bd8-0c950600cefb.JPG)
 
 ---
