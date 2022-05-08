@@ -1,8 +1,8 @@
 .input {
-    background-color: #222831;
-    border: 1px solid #1a9199;
+    background-color: #222831 !important;
+        border: 1px solid #1a9199 !important;
 }
 
 .input:hover {
-    background-color: #222831;
+    background-color: #222831 !important;
 }
