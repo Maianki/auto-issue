@@ -22,6 +22,7 @@ export function CreateIssuePage() {
   }
 
 const encodedToken = process.env.REACT_APP_API_KEY;
+console.log(process.env.REACT_APP_API_KEY);
 const handleCreateIssue = async() => {
     try {
       const response = await axios.post(
