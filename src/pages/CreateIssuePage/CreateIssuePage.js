@@ -21,7 +21,7 @@ export function CreateIssuePage() {
     return `${inputURLArray[0]}//api.${inputURLArray[2]}/repos/${inputURLArray[3]}/${inputURLArray[4]}/issues`
   }
 
-const encodedToken = "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";
+const encodedToken = "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";
 const handleCreateIssue = async() => {
     try {
       const response = await axios.post(
