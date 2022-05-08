@@ -46,6 +46,7 @@ export function CreateIssuePage() {
           status: "success",
           isClosable: true,
           duration: 2000,
+          position:"top"
         });
         setApiInput({
           owner: "",
@@ -58,9 +59,10 @@ export function CreateIssuePage() {
     } catch (error) {
       toast({
         title: `Something went wrong ${error}`,
-        status: "success",
+        status: "error",
         isClosable: true,
         duration: 2000,
+        position: "top",
       });
     }
   };
