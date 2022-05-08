@@ -1,32 +1,29 @@
 import React, { useState } from "react";
-import capture from "../../assets/capture.png";
+import welcomeImg from "../../assets/welcome-img.svg";
+import logo from "../../assets/logo.png";
 
 export function Homepage() {
-  const [dropdown, setDropdown] = useState(false);
+  //   const [dropdown, setDropdown] = useState(false);
   return (
     <div className='popup-container'>
       <h2 className='extension-name text-bold-weight text-center'>
-        Create Auto Issues
+        <img className='site-logo' src={logo} alt='site logo' />
+        <span>Create Auto Issues</span>
       </h2>
-      <div className='issue-title text-xlg'>Spelling Mistake</div>
-      <img className='issue-img' src={capture} alt='issue-img' />
-      <div className='issue-desc text-lg'>
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit..
+      <h3 className='issue-title text-xlg text-center'>want to report bug?</h3>
+      <img className='issue-img' src={welcomeImg} alt='issue-img' />
+      <div className='issue-desc text-sm'>
+        An easy to use chrome extension to create issue in the github repo of
+        visiting webpage
       </div>
       <div className='issue-footer flex-r'>
-        <button className='btn btn-primary text-md'>Create Issue</button>
-        <button
-          onClick={() => {
-            setDropdown((prev) => !prev);
-          }}
-          className='m-left-auto btn-icon1 btn footer-icon'
-        >
+        <button className='btn btn-primary text-md'>Raise Issue</button>
+        {/* <button className='m-left-auto btn-icon1 btn footer-icon'>
           <i className='fa-solid fa-ellipsis-vertical'></i>
-        </button>
+        </button> */}
       </div>
 
-      {dropdown && (
+      {/* {dropdown && (
         <div
           onClick={() => {
             setDropdown((prev) => !prev);
@@ -42,7 +39,7 @@ export function Homepage() {
             <span>Delete</span>
           </li>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
