@@ -1,10 +1,10 @@
 import React from "react";
-import { Input, Text, Textarea } from "@chakra-ui/react";
+import { Container, Input, Text, Textarea } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export function CreateIssuePage() {
   return (
-    <div className='issue-page-container'>
+    <Container maxW='4xl'>
       <h1 className='create-issue-heading text-bold-weight'>Add issue</h1>
 
       {/* title input */}
@@ -31,6 +31,6 @@ export function CreateIssuePage() {
       </Link>
       {/* <button className='btn btn-primary text-md'>Create Issue</button> */}
       {/* </div> */}
-    </div>
+    </Container>
   );
 }
