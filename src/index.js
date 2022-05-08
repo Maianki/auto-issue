@@ -3,26 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { ChakraProvider,extendTheme } from '@chakra-ui/react'
-import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 const customTheme = extendTheme({
   colors: {
     brand: {
-      // main: "#222831",
       100: "#222831",
       200: "#393E46",
       300: "#00ADB5",
       400: "#EEEEEE",
     },
   },
-})
+});
 root.render(
-  <React.StrictMode>
-    <ChakraProvider theme={customTheme}>
-      <App />
-    </ChakraProvider>
-  </React.StrictMode>
+  <BrowserRouter>
+    <React.StrictMode>
+      <ChakraProvider theme={customTheme}>
+        <App />
+      </ChakraProvider>
+    </React.StrictMode>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
